@@ -1,0 +1,131 @@
+Code_Book created by Alex Kiryanov for Dataset in framework  of Getting and Cleaning Data Course of John's Hopkins University
+Dataset created for learning purpuse ONLY!
+===============================================================================================================
+This Dataset - modified (average data's) for small subset original data of experiment with 30 subjects and six levels of activity.
+
+Each subject codified separately in column "Subject" by numbers 1...30.
+
+Six levels of activity which You can find in column "Activity" listed below:
+
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
+
+The original experiments data for this dataset (see...www.smartlab.ws) contains data from the accelerometer and gyroscope 3-axial raw signals (subsequently tAcc-X or -Y or -Z and tGyro-X or -Y or -Z) letter in Names of Variable.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+
+Prefix 't' in Names  simply to denote time were captured at a constant rate of 50 Hz. 
+
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+
+Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. 
+
+(Note the 'f' to indicate frequency domain signals). 
+
+ If You find mean() in names of variable -  Mean value of measurment
+ If You find std() in names of variable -  Standard deviation value of measurment
+
+The complete list of name variables see here...
+
+1       Subject                         Integer Data
+2	Activity			Character Data			
+3	Group-Mean tBodyAcc-mean()-X	Here and below all others variables - Number Data as Dbl
+4	Group-Mean tBodyAcc-mean()-Y
+5	Group-Mean tBodyAcc-mean()-Z
+6	Group-Mean tGravityAcc-mean()-X
+7	Group-Mean tGravityAcc-mean()-Y
+8	Group-Mean tGravityAcc-mean()-Z
+9	Group-Mean tBodyAccJerk-mean()-X
+10	Group-Mean tBodyAccJerk-mean()-Y
+11	Group-Mean tBodyAccJerk-mean()-Z
+12	Group-Mean tBodyGyro-mean()-X
+13	Group-Mean tBodyGyro-mean()-Y
+14	Group-Mean tBodyGyro-mean()-Z
+15	Group-Mean tBodyGyroJerk-mean()-X
+16	Group-Mean tBodyGyroJerk-mean()-Y
+17	Group-Mean tBodyGyroJerk-mean()-Z
+18	Group-Mean tBodyAccMag-mean()
+19	Group-Mean tGravityAccMag-mean()
+20	Group-Mean tBodyAccJerkMag-mean()
+21	Group-Mean tBodyGyroMag-mean()
+22	Group-Mean tBodyGyroJerkMag-mean()
+23	Group-Mean fBodyAcc-mean()-X
+24	Group-Mean fBodyAcc-mean()-Y
+25	Group-Mean fBodyAcc-mean()-Z
+26	Group-Mean fBodyAcc-meanFreq()-X
+27	Group-Mean fBodyAcc-meanFreq()-Y
+28	Group-Mean fBodyAcc-meanFreq()-Z
+29	Group-Mean fBodyAccJerk-mean()-X
+30	Group-Mean fBodyAccJerk-mean()-Y
+31	Group-Mean fBodyAccJerk-mean()-Z
+32	Group-Mean fBodyAccJerk-meanFreq()-X
+33	Group-Mean fBodyAccJerk-meanFreq()-Y
+34	Group-Mean fBodyAccJerk-meanFreq()-Z
+35	Group-Mean fBodyGyro-mean()-X
+36	Group-Mean fBodyGyro-mean()-Y
+37	Group-Mean fBodyGyro-mean()-Z
+38	Group-Mean fBodyGyro-meanFreq()-X
+39	Group-Mean fBodyGyro-meanFreq()-Y
+40	Group-Mean fBodyGyro-meanFreq()-Z
+41	Group-Mean fBodyAccMag-mean()
+42	Group-Mean fBodyAccMag-meanFreq()
+43	Group-Mean fBodyBodyAccJerkMag-mean()
+44	Group-Mean fBodyBodyAccJerkMag-meanFreq()
+45	Group-Mean fBodyBodyGyroMag-mean()
+46	Group-Mean fBodyBodyGyroMag-meanFreq()
+47	Group-Mean fBodyBodyGyroJerkMag-mean()
+48	Group-Mean fBodyBodyGyroJerkMag-meanFreq()
+49	Group-Mean tBodyAcc-std()-X
+50	Group-Mean tBodyAcc-std()-Y
+51	Group-Mean tBodyAcc-std()-Z
+52	Group-Mean tGravityAcc-std()-X
+53	Group-Mean tGravityAcc-std()-Y
+54	Group-Mean tGravityAcc-std()-Z
+55	Group-Mean tBodyAccJerk-std()-X
+56	Group-Mean tBodyAccJerk-std()-Y
+57	Group-Mean tBodyAccJerk-std()-Z
+58	Group-Mean tBodyGyro-std()-X
+59	Group-Mean tBodyGyro-std()-Y
+60	Group-Mean tBodyGyro-std()-Z
+61	Group-Mean tBodyGyroJerk-std()-X
+62	Group-Mean tBodyGyroJerk-std()-Y
+63	Group-Mean tBodyGyroJerk-std()-Z
+64	Group-Mean tBodyAccMag-std()
+65	Group-Mean tGravityAccMag-std()
+66	Group-Mean tBodyAccJerkMag-std()
+67	Group-Mean tBodyGyroMag-std()
+68	Group-Mean tBodyGyroJerkMag-std()
+69	Group-Mean fBodyAcc-std()-X
+70	Group-Mean fBodyAcc-std()-Y
+71	Group-Mean fBodyAcc-std()-Z
+72	Group-Mean fBodyAccJerk-std()-X
+73	Group-Mean fBodyAccJerk-std()-Y
+74	Group-Mean fBodyAccJerk-std()-Z
+75	Group-Mean fBodyGyro-std()-X
+76	Group-Mean fBodyGyro-std()-Y
+77	Group-Mean fBodyGyro-std()-Z
+78	Group-Mean fBodyAccMag-std()
+79	Group-Mean fBodyBodyAccJerkMag-std()
+80	Group-Mean fBodyBodyGyroMag-std()
+81	Group-Mean fBodyBodyGyroJerkMag-std()
+
+The current dataset use only subset of variables  were use two type values of measurements: 
+
+
+EACH VARIABLES LISTED UP IS AVERAGE DATA GROUPED BY SUBJECT, BY ACTIVITY and BY TWO TYPE OF MEASURMENTS (MEAN AND STANDARD DEVIATION)
+
+NOTE:
+
+Additional experimental's information WAS IGNORED!!!
